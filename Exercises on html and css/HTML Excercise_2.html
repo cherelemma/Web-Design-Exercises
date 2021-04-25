@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Employment Application Form</title>
+    </head>
+
+    <style>
+        body {font-family: Arial, Helvetica, sans-serif;}
+        div.form1{background-color:#B0C4DE; width:450px; height: auto; margin:auto; padding: 10px; } 
+        form {border: 3px solid #f1f1f1; padding: 10px;}
+
+        input[type=text], input[type=password] {   
+            margin: 5px 0; padding: 3px 5px;   display: inline-block;   
+            border: 2px solid rgb(65, 79, 141); 
+        }
+        button {width: auto;  color:rgb(37, 27, 80); font-weight: bold; 
+                padding: 5px; margin: 5px 0px;   cursor: pointer;   
+         } 
+
+         label{
+            display: inline-block;
+            width: 100px;
+            margin: 5px 0; padding: 3px 5px;
+         } 
+        </style>
+        
+    <body>
+
+    <div class="form1"> 
+        <h2>Login</h2>
+        <form method = "POST" action="">
+            <div>
+                <label for="uname">User Name:</label>   
+                <input type = "text" id="uname" name ="uname" placeholder = "user name" required />
+            </br>
+                <label for="password" style="width: 100px;">Paasowrd:</label> 
+                <input type = "text" id="password" name ="password" placeholder = "password" required />
+            </div> 
+            <div style="margin-left:120px;">
+                <button type="login" value="">Login</button>
+                <button  type="signup" value=""> <a href="HTML Excercise_3.html"> SignUp</a> </button>
+            </div>
+
+        </form>
+    </div>
+        
+    </body>
+</html>

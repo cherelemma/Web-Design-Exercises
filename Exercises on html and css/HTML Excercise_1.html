@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Employment Application Form</title>
+    </head>
+
+    <style>
+        div{
+            background-color:#B0C4DE; 
+            width:420px;
+            height: auto; 
+            margin:auto; 
+            padding: 10px;
+        }    
+        </style>
+
+    <body>
+
+    <div> 
+        <h2>Employment Application Form Example</h2>
+        <form method = "POST" action="">
+            <fieldset style="width: 250px;">
+                <legend>Application Form</legend>
+            <table>
+            <tr>
+                <td><label for="fname">First name*</label></td>
+                <td> <label for="lname">Last name*</label> </td>
+            </tr>
+            <tr>
+                <td><input type = "text" id="fname" name ="fname" size ="20" required /></td>
+                <td><input type = "text" id="lname" name ="lname" required /></td>
+            </tr>
+            </table>
+        </br>
+            <label for="email">Email adress*</label></br>
+            <input type = "text" id="email" name ="email" required />
+        
+        </br></br>
+            <label for="website">Portfolio Website</label></br>
+            <input type = "text" id="website" name ="website" value="https://"/>
+            
+        </br></br>
+            <label for="position">Position you are Applying for*</label></br>
+            <input type = "text" id="position" name ="position" required />
+        
+        </br></br>
+        <table cellpadding = "3px" >
+            <tr>
+                <td> <label for="salary" style="display: inline-block; width:180px">Salary Requirments</label></td>
+                <td> <label for="startdate">When can you start?</label></td>
+            </tr>
+            <tr>
+                <td> <input type = "text" id="salary" name ="salary"/></td>
+                <td> <input type = "text" id="startdate" name ="stardate"/></td>
+            </tr>
+            <tr>
+                <td> <label for="Phone" style="display: inline-block; width:180px">Phone*</label></td>         
+                <td> <label for="fax">Fax</label></td>
+            </tr>
+            <tr>
+                <td> <input type = "text" id="phone" name ="phone" required /></td>
+                <td> <input type = "text" id="fax" name ="fax"/></td>
+            </tr>
+        </table>     
+        
+        </br>
+            <label for="relacation">Are you willing to relocate?</label></br>
+            <input type = "radio" id="yes" name ="relolate" value="Yes" />
+            <label for="yes">Yes</label>
+            <input type = "radio" id="no" name ="relolate" value="No" />
+            <label for="no">No</label>
+            <input type = "radio" id="notsure" name ="relolate" value="Notsure" />
+            <label for="notsure">Not Sure</label>
+
+        </br></br>
+            <label for="company">Last company you worked for</label></br>
+            <input type = "text" id="company" name ="company" />
+        
+        </br></br>
+            <label for="comments">Reference/Comments/Questions</label></br>
+            <textarea id="comments" name ="comments" rows="10" cols="30"></textarea>
+      </br></br>
+            <button type="submit" value="">Send Application</button>
+            <button  type="reset" value="">Clear Application </button>
+
+            </fieldset>
+        </form>
+    </div>
+        
+    </body>
+
+</html>
