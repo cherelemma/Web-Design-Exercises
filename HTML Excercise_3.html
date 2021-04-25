@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Employment Application Form</title>
+    </head>
+
+    <style>
+        div{
+            background-color:#B0C4DE; 
+            width:420px;
+            height: auto; 
+            margin:auto; 
+            padding: 10px;
+        }  
+
+        label{
+            display: inline-block;
+            width: 120px;
+            margin: 5px 0; padding: 3px 5px;
+         } 
+
+        input[type=text], input[type=password] {   
+            margin: 5px 0; padding: 3px 5px;   display: inline-block;   
+            width: 230px; border: 1px solid rgb(65, 79, 141); 
+        }
+
+        </style>
+
+    <body>
+        <div> 
+            <h3 style="text-align: center;">Sign Up Form</h3>
+            
+            <form method = "POST" action="">
+
+                <label for="name">Name:</label>   
+                <input type = "text" id="name" name ="name" required />
+            </br>    
+                <label for="fname">Father Name:</label>   
+                <input type = "text" id="fname" name ="fname" required />
+            </br>
+                <label for="postal">Postal Address</label>   
+                <input type = "text" id="postal" name ="postal"/>
+            </br>    
+                <label for="personal">Personal Address:</label>   
+                <input type = "text" id="personal" name ="personal" />
+            </br>  
+                <label for="sex">Sex:</label>   
+                <input type = "radio" id="male" name ="male" value="male" />
+                <label style="width: 50px;" for="male">Male</label>
+                <input type = "radio" id="female" name ="female" value="female" />
+                <label style="width: 60px;" for="female">Female</label>
+            </br> 
+                <label for="city">City:</label>  
+                    <select size="1" name="city">
+                        <option>Select City</option>
+                        <option>Addis Ababa</option>
+                        <option>Adama</option>
+                        <option>Ambo</option>
+                        <option>Aksum</option>
+                        <option>Bahir Dar</option>
+                        <option>Diredewa</option>
+                        <option>Gonder</option>
+                        <option>Hawassa</option>
+                        <option>Nekemit</option>
+                    </select>
+                </br> 
+                    <label for="course">Course:</label>  
+                    <select size="1" name="course">
+                        <option>Select Course</option>
+                        <option>Computer Programming</option>
+                        <option>Web Design and Development</option>
+                        <option>Operating Systems</option>
+                        <option>Digital Logic</option>
+                        <option>Engineering Maths</option>
+                        <option>Software Engineering</option>
+                        <option>Database Systems</option>
+                        <option>Computer Networking</option>
+                        <option>Entrepreneurship </option>
+                    </select>
+                </br> 
+                <label for="district">District:</label>  
+                <select size="1" name="district">
+                    <option>Select District</option>
+                    <option>Addis Ketema</option>
+                    <option>Akaki Kality</option>
+                    <option>Bole Bulbula</option>
+                    <option>Cherkos</option>
+                    <option>Lafto</option>
+                    <option>Sebeta</option>
+                    <option>Yeka</option>
+                </select>
+                </br> 
+                <label for="state">State:</label>  
+                <select size="1" name="state">
+                    <option>Select State</option>
+                    <option>Addis Ababa</option>
+                    <option>Amhara</option>
+                    <option>Afar</option>
+                    <option>Binishangul</option>
+                    <option>Diredewa</option>
+                    <option>Gambela</option>
+                    <option>Hareri</option>
+                    <option>Oromia</option>
+                    <option>Sidama</option>
+                    <option>SNNP</option>
+                    <option>Somalia</option>
+                    <option>Tigray</option>
+                </select>
+
+                </br>    
+                    <label for="pincode">PinCode:</label>   
+                    <input type = "text" id="pincode" name ="pincode" />
+                </br>
+                    <label for="emailid">EmailID</label>   
+                    <input type = "text" id="emailid" name ="emailid" required/>
+                </br>    
+                    <label for="dob">DOB:</label>   
+                    <input type = "text" id="dob" name ="dob" />
+                </br>      
+                    <label for="mobileno">MobileNo:</label>   
+                    <input type = "text" id="mobileno" name ="mobileno" required/>
+                </br>  
+                    <button type="reset" value="">Reset</button>
+                    <button style="margin-left: 80px;"> Submit Form </button>
+           
+            </form>
+        </div>
+    </body>
+
+</html>
