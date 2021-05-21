@@ -1,5 +1,7 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Employment Application Form</title>
     </head>
 
@@ -17,6 +19,10 @@
             width: 120px;
             margin: 5px 0; padding: 3px 5px;
          } 
+
+         datalist{
+            width: 70px;
+         }
 
         input[type=text], input[type=password] {   
             margin: 5px 0; padding: 3px 5px;   display: inline-block;   
@@ -64,8 +70,9 @@
                     </select>
                 </br> 
                     <label for="course">Course:</label>  
-                    <select size="1" name="course">
-                        <option>Select Course</option>
+                    <input type="text" name="course" required list="course_lists" placeholder="Select Course">
+
+                    <datalist id="course_lists">
                         <option>Computer Programming</option>
                         <option>Web Design and Development</option>
                         <option>Operating Systems</option>
@@ -75,7 +82,7 @@
                         <option>Database Systems</option>
                         <option>Computer Networking</option>
                         <option>Entrepreneurship </option>
-                    </select>
+                    </datalist>
                 </br> 
                 <label for="district">District:</label>  
                 <select size="1" name="district">
